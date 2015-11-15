@@ -6,6 +6,9 @@ You might well ask at this point why bother making a new Casper's clone?
 Although this is inspired by Kasper, there are several **additional** features which make this port closer 
 to the original theme. Besides, it was recently updated to match the current version of the theme.
 
+The main difference to the original is still the fact that Jasper expects a single author. With a 
+bit of tweaking it shouldn't be too difficult to enable a per-post author. Feel free to fork and improve on this.
+
 **Important:**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means 
 that we need to generate your site locally (as explained below) and push the resulting HTML to a Github repository. 
 This is exactly what I have done for the generating the live demo.
@@ -55,14 +58,11 @@ This is exactly what I have done for the generating the live demo.
 ## How to use it
 
 Simply clone this repository (*master branch*), and then run `jekyll serve` inside the directory. Upload the resulting 
-_site/ contents to your repository (*master branch* if uploading as your personal page (username.github.io) or *gh-pages branch* if uploading as a project page (like I did for the [demo](https://github.com/biomadeira/jasper/tree/gh-pages)).
-
-As discussed [here](https://github.com/biomadeira/jasper/issues/3), in order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your *username* as defined in the [\_config.yml](_config.yml) file.
-This probably means that with a bit of hacking you could in principle generate multiple author blogs...
+_site/ contents to your repository (*gh-pages branch*).
 
 ## Issues and contributing 
 
-I have tested this install with Ruby v2.2.2p95 (Mac OS RVM) and Jekyll v3.0.0. If you run into any problems please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
+I have tested this install with Ruby v2.2.2p95 (Mac OS RVM) and Jekyll v3.0.0. If you run into any issues please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
 
 Feel free pull-request your patches and fixes.
 
